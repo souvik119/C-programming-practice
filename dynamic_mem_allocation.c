@@ -25,5 +25,8 @@ int main(void){
         printf("%d\t", *(ptr + i));
     }
     printf("\nSum of the numbers of array is : %d", sum);
+
+    //need to free up memory at the end
+    free(ptr);
     return 0;
 }
